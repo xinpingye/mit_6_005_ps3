@@ -14,10 +14,11 @@ package expressivo;
  * You may, however, add additional methods, or strengthen the specs of existing methods.
  * Declare concrete variants of Expression in their own Java source files.
  */
+//immutable
 public interface Expression {
     
-    // Datatype definition
-    //   TODO
+    // DataType definition
+    // Expression = Number(double) + Variable(String) + Sum(Expression, Expression) + Multiple(Expression, Expression)
     
     /**
      * Parse an expression.
@@ -52,6 +53,15 @@ public interface Expression {
     @Override
     public int hashCode();
     
-    // TODO more instance methods
-    
+    // more instance methods
+    // Recursive ADT Spec 
+    // operation define
+    // double -> Expression
+    // variable -> Expression
+    // Expression + Expression -> Expression
+    // Expression * Expression -> Expression
+    // ToDo test operation
+    // 
 }
+
+
